@@ -15,9 +15,6 @@ export default defineConfig({
   assetsInclude: ['**/*.glb', '**/*.hdr', '**/*.glsl'],
   build: {
     assetsInlineLimit: 1024,
-    rollupOptions: {
-      external: ['@remix-run/cloudflare'], // Ensure this externalizes the module
-    },
   },
   server: {
     port: 7777,
